@@ -35,7 +35,7 @@ export default function LoginForm() {
       setError(err.message === 'Invalid login credentials' ? 'Неверный email или пароль' : err.message);
       setLoading(false);
     } else {
-     window.location.href = '/dashboard';
+      window.location.replace('/dashboard');
     }
   }
 
