@@ -1,0 +1,31 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+/* Import existing CRM styles */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{font-family:'DM Sans',system-ui,sans-serif;font-size:14px;}
+[data-theme="dark"]{
+  --bg:#04080F;--bg2:#070C17;--card:#0A1020;--card2:#0D1429;--card3:#111828;
+  --bdr:rgba(0,229,255,0.07);--bdr2:rgba(0,229,255,0.2);
+  --cy:#00E5FF;--cy2:#00B8CC;--pu:#7C3AED;--pu2:#A855F7;
+  --gr:#10B981;--am:#F59E0B;--rd:#EF4444;
+  --t1:#D6E8F5;--t2:#4D7A9E;--t3:#1E3550;
+  --hbg:rgba(4,8,15,.96);--shadow:0 6px 24px rgba(0,229,255,.06);
+}
+[data-theme="light"]{
+  --bg:#F0F4F9;--bg2:#E8EDF5;--card:#FFFFFF;--card2:#F5F8FC;--card3:#EDF1F8;
+  --bdr:rgba(0,140,200,0.12);--bdr2:rgba(0,140,200,0.3);
+  --cy:#00B8CC;--cy2:#0099AA;--pu:#7C3AED;--pu2:#A855F7;
+  --gr:#10B981;--am:#F59E0B;--rd:#EF4444;
+  --t1:#0D2137;--t2:#4D6E8A;--t3:#8AAABF;
+  --hbg:rgba(240,244,249,.96);--shadow:0 4px 20px rgba(0,0,0,.08);
+}
+body{background:var(--bg);color:var(--t1);min-height:100vh;overflow-x:hidden}
+[data-theme="dark"] body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,.014) 3px,rgba(0,0,0,.014) 6px);pointer-events:none;z-index:0}
+a{color:var(--cy);text-decoration:none}
+a:hover{text-decoration:underline}
+input[type=date]{color-scheme:dark}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--card2);border-radius:2px}
+
