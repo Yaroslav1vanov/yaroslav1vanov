@@ -14,10 +14,6 @@ export default function LoginForm() {
     const t = localStorage.getItem('ela_theme') || 'dark';
     setTheme(t);
     document.documentElement.dataset.theme = t;
-    // Redirect if already logged in
-    createClient().auth.getSession().then(({ data: { session } }) => {
-      if (session) window.location.href = '/dashboard';
-    });
   }, []);
 
   function toggleTheme() {
@@ -39,7 +35,7 @@ export default function LoginForm() {
     } else if (data.session) {
       window.location.href = '/dashboard';
     } else {
-      setError('Не удалось создать сессию, попробуйте ещё раз');
+      setError('Ошибка входа, попробуйте ещё раз');
       setLoading(false);
     }
   }
